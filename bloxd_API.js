@@ -47,3 +47,6 @@ api.playParticleEffect({
     ],
     blendMode: 1,
 })
+
+const speed = 965
+api.sendFlyingMiddleMessage(myId, ["Subcribe to Squirrel_Meow_YT! Or else..."], speed)
