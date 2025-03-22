@@ -4,3 +4,5 @@ let user="\[⚡\]\[🔧\]Arthur: " + wordList[randomNumber];
 api.
 broadcastMessage
 (user)
+
+api.setPlayerPose(myId,"zombie")
