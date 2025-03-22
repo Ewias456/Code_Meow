@@ -6,3 +6,5 @@ broadcastMessage
 (user)
 
 api.setPlayerPose(myId,"zombie")
+
+api.changePlayerIntoSkin(myId,"head","zombie")
