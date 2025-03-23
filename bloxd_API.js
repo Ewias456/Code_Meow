@@ -58,3 +58,5 @@ api.applyEffect(myId, "Feather Falling", null, { inbuiltLevel: 69999})
 api.applyEffect(myId, "Slowness", null, { inbuiltLevel: -1})
 api.applyEffect(myId, "Haste", null, { inbuiltLevel: 99999969})
 api.applyEffect(myId, "Jump Boost", null, { inbuiltLevel: 1})
+
+api.scalePlayerMeshNodes(myId, { "TorsoNode":[0.7,0.75,0.7], "HeadMesh":[0.9,0.9,0.9,], "ArmRightMesh":[1.2,1.2,1.2], "ArmLeftMesh":[1.2,1.2,1.2], "LegLeftMesh":[0.75,0.7,0.75], "LegRightMesh":[0.75,0.7,0.75] });
