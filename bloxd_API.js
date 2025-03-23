@@ -115,3 +115,4 @@ y += 2
 z += 0.5
 api.playParticleEffect({dir1: [0, 0, 0],dir2: [0, 0, 0],pos1: [x, y, z],pos2: [x, y, z],texture: "bubble",minLifeTime: 10,maxLifeTime: 10,minEmitPower: 1,maxEmitPower: 1,minSize: 1,maxSize: 1,manualEmitCount: 1,gravity: [0, 0, 0],colorGradients: [{timeFraction: 0,minColor: [0, 0, 0, 1],maxColor: [0, 0, 0, 1]}],velocityGradients: [{timeFraction: 0,factor: 1,factor2: 1}],blendMode: 1},null)
 
+api.sendMessage(myId, [{str:"Sub", style:{color:"Red", fontWeight:"1", fontSize:"160px", fontStyle:"", opacity:0.5}}], {fontWeight:0, color:""})
