@@ -50,3 +50,11 @@ api.playParticleEffect({
 
 const speed = 965
 api.sendFlyingMiddleMessage(myId, ["Subcribe to Squirrel_Meow_YT! Or else..."], speed)
+
+
+api.applyEffect(myId, "Health Regen", null, { inbuiltLevel: 699999999})
+api.applyEffect(myId, "Damage Reduction", null, { inbuiltLevel: 9199999})
+api.applyEffect(myId, "Feather Falling", null, { inbuiltLevel: 69999})
+api.applyEffect(myId, "Slowness", null, { inbuiltLevel: -1})
+api.applyEffect(myId, "Haste", null, { inbuiltLevel: 99999969})
+api.applyEffect(myId, "Jump Boost", null, { inbuiltLevel: 1})
