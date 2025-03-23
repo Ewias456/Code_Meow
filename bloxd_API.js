@@ -116,3 +116,37 @@ z += 0.5
 api.playParticleEffect({dir1: [0, 0, 0],dir2: [0, 0, 0],pos1: [x, y, z],pos2: [x, y, z],texture: "bubble",minLifeTime: 10,maxLifeTime: 10,minEmitPower: 1,maxEmitPower: 1,minSize: 1,maxSize: 1,manualEmitCount: 1,gravity: [0, 0, 0],colorGradients: [{timeFraction: 0,minColor: [0, 0, 0, 1],maxColor: [0, 0, 0, 1]}],velocityGradients: [{timeFraction: 0,factor: 1,factor2: 1}],blendMode: 1},null)
 
 api.sendMessage(myId, [{str:"Sub", style:{color:"Red", fontWeight:"1", fontSize:"160px", fontStyle:"", opacity:0.5}}], {fontWeight:0, color:""})
+
+const [x, y, z] = api.getPosition(myId)
+const xzRad = 0.5
+const yRad = 1
+api.playParticleEffect({
+            dir1: [-1, -1, -1],
+            dir2: [1, 1, 1],
+            pos1: [x - xzRad, y + 1 - yRad, z - xzRad],
+            pos2: [x + xzRad, y + 1 + yRad, z + xzRad],
+            texture: "drift",
+            minLifeTime: 9,
+            maxLifeTime: 10,
+            minEmitPower: 1,
+            maxEmitPower: 2,
+            minSize: 9.90,
+            maxSize: 5,
+            manualEmitCount: 900000,
+            gravity: [50, 50, 10],
+            colorGradients: [
+                {
+                    timeFraction: 0,
+                    minColor: [99900, 99900, 200, 100],
+                    maxColor: [176, 99900, 99900, 170],
+                },
+            ],
+            velocityGradients: [
+                {
+                    timeFraction: 100,
+                    factor: 50,
+                    factor2: 50,
+                },
+            ],
+            blendMode: 1,
+        })
